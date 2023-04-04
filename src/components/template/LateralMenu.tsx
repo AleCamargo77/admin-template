@@ -15,7 +15,13 @@ export default function LateralMenu() {
         <MenuItem url="/settings" text="Ajustes" icon={SettingsIcon} />
         <MenuItem url="/notifications" text="Notificaçöes" icon={BellIcon} />
         <ul className={``}>
-          <MenuItem url="/notifications" text="Sair" icon={LogoutIcon} />
+          <MenuItem
+            url="/notifications"
+            text="Sair"
+            icon={LogoutIcon}
+            onClick={() => console.log("logout")}
+            className={`text-red-600`}
+          />
         </ul>
       </ul>
     </aside>
