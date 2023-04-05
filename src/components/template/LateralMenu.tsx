@@ -10,19 +10,19 @@ export default function LateralMenu() {
       >
         <Logo />
       </div>
-      <ul className={`flex-grow`}>
+      <ul className="flex-grow">
         <MenuItem url="/" text="Início" icon={HomeIcon} />
         <MenuItem url="/settings" text="Ajustes" icon={SettingsIcon} />
         <MenuItem url="/notifications" text="Notificaçöes" icon={BellIcon} />
-        <ul className={``}>
-          <MenuItem
-            url="/notifications"
-            text="Sair"
-            icon={LogoutIcon}
-            onClick={() => console.log("logout")}
-            className={`text-red-600`}
-          />
-        </ul>
+      </ul>
+      <ul className={``}>
+        <MenuItem
+          url="/notifications"
+          text="Sair"
+          icon={LogoutIcon}
+          onClick={() => console.log("logout")}
+          className={`text-red-600 hover:bg-red hover:bg-red-400 hover:text-white `}
+        />
       </ul>
     </aside>
   );
