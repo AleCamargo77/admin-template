@@ -10,7 +10,7 @@ export default function Notifications() {
         title="Notificaçöes"
         subtitle="Aqui vocë irá gerenciar suas notificaçöes"
       >
-        <h3> {ctx.noame}</h3>
+        <h3> {ctx.name}</h3>
       </Layout>
     </div>
   );
