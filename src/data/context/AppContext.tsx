@@ -9,7 +9,7 @@ interface AppContextProps {
 const AppContext = createContext({});
 
 export function AppProvider(props: any) {
-  const [theme, setTheme] = useState<Theme>("light");
+  const [theme, setTheme] = useState<Theme>("dark");
 
   function changeTheme() {
     setTheme(theme === "" ? "dark" : "");
